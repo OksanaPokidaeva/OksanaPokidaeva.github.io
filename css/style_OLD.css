@@ -8,9 +8,6 @@ body {
   margin-bottom: 70px;
   font-size: 1em;
 }
-h1 {
-  font-size: 1.5rem;
-}
 h5 {
   padding-left: 40px;
   margin-top: 10px;
@@ -78,17 +75,6 @@ h6 {
     background: url("../images/list-item-hover.png") no-repeat left top;
     color: #c61516;
 }
-.fix-cont-mg {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-#accordion a.cat-link {
-  color: #ffffff;
-}
-.card-header {
-  padding: 0.25rem 0.75rem;
-}
-
 .mail_adress a {
     color: #9d9d9d;
     font-family: Trebuchet MS;
@@ -172,23 +158,6 @@ h6 {
 .art-main a:hover {
     text-decoration: underline;
 }
-#toCatalog {
-  width:100px;
-  background-color: #343a40;
-  text-align:center;
-  padding:5px;
-  position:fixed;
-  bottom:10px; /* отступ кнопки от нижнего края страницы*/
-  right:10px;
-  cursor:pointer;
-  display:none;
-  color:#fff;
-  font-size:11px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-
 #toTop {
     width:100px;
     background-color: #343a40;
@@ -206,10 +175,10 @@ h6 {
     border-radius: 10px;
 }
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 70px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
 }
 .footer-bottom{
   margin-top: 10px;
@@ -222,12 +191,12 @@ h6 {
     font-style: italic;
 }
 .bg-opasity {
-    opacity: 0.8;
-    filter: alpha(Opacity=80);
+  opacity: 0.8;
+  filter: alpha(Opacity=80);
 }
 /*-----------------secondary pages-------------------*/
 .page-topmg{
-    margin-top: 70px;
+  margin-top: 70px;
 }
 /*------------------photogallery---------------------*/
 .thumb img {
@@ -260,22 +229,6 @@ h6 {
     margin-bottom: 20px;
 }
 
-/*---------------Кнопка Каталог-----------------*/
-.sticky-content{
-}
-
-.sticky-content.fixed{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding-left: 10px;
-  z-index: 99999;
-}
-.veiw-catalog {
-  display: none;
-}
-
 /*------------media-------------------*/
 @media (max-width: 992px) {
   .container {
@@ -297,9 +250,6 @@ h6 {
 .logo-md{
   display: block;
 }
-.top-nav .nav-link {
-  text-align: left;
-}
 }
 @media (max-width: 768px) {
   .art-main {
@@ -307,15 +257,6 @@ h6 {
   }
   .nav-left-visibility{
     display: none;
-  }
-  .veiw-catalog {
-    display: block;
-  }
-  .top-nav .nav-link {
-    text-align: left;
-}
-  .page-topmg{
-      margin-top: 15px;
   }
   .thumb a:hover span {
       background: url("../images/over.png") no-repeat 30px 30%;
