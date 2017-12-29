@@ -1,3 +1,35 @@
+
+/*----------------Подсветка пунктов меню--------------------*/
+
+$(function () {
+    var location = window.location.href;
+    var cur_url = location.split('/').pop();
+
+    $('.menu li').each(function () {
+        var link = $(this).find('a').attr('href');
+
+        if (cur_url == link)
+        {
+            $(this).addClass('active');
+        }
+    });
+});
+
+$(function () {
+    var location = window.location.href;
+    var cur_url = location.split('/').pop();
+
+    $('.left-menu li').each(function () {
+        var link = $(this).find('a').attr('href');
+
+        if (cur_url == link)
+        {
+            $(this).find('a').addClass('active-emb');
+        }
+    });
+});
+
+
 /*----------------Кнопка В Каталог--------------------*/
 
 $(function() {
@@ -51,12 +83,11 @@ $('body,html').animate({scrollTop:0},800);
 });
 
 });
-
 /*------------------Раскрытие меню на главной странице----------------------*/
 $(document).ready(function() {
   var location = window.location.href;
   var cur_url = location.split('/').pop();
-  var cur_link = "index.html";
+  var cur_link = "index.php";
 
   if (cur_url == cur_link) {
 
